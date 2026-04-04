@@ -1,0 +1,263 @@
+.case-create-stepper {
+  display: grid;
+  grid-template-columns: repeat(5, minmax(0, 1fr));
+  gap: 10px;
+}
+
+.case-create-step {
+  background: var(--surface);
+  border: 1px solid var(--line);
+  border-radius: 16px;
+  padding: 12px 14px;
+  display: flex;
+  align-items: center;
+  gap: 12px;
+}
+
+.case-create-step.is-current {
+  border-color: var(--primary);
+  background: var(--primary-soft);
+}
+
+.case-create-step.is-done {
+  border-color: rgba(2, 122, 72, 0.2);
+}
+
+.case-create-step-index {
+  width: 28px;
+  height: 28px;
+  border-radius: 999px;
+  display: grid;
+  place-items: center;
+  font-size: 12px;
+  font-weight: 700;
+  background: var(--surface-soft);
+  color: var(--text2);
+}
+
+.case-create-step.is-current .case-create-step-index,
+.case-create-step.is-done .case-create-step-index {
+  background: var(--primary);
+  color: #fff;
+}
+
+.case-create-step-label {
+  font-size: 13px;
+  font-weight: 600;
+}
+
+.case-create-grid {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 20px 16px;
+  padding: 20px;
+}
+
+.case-create-grid--three {
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+}
+
+.case-create-stack {
+  display: grid;
+  gap: 20px;
+  padding: 20px;
+}
+
+.case-create-field {
+  display: grid;
+  gap: 8px;
+  align-content: start;
+}
+
+.case-create-field-label {
+  font-size: 13px;
+  font-weight: 600;
+  color: var(--text);
+  padding-top: 2px;
+}
+
+.case-create-field-hint {
+  font-size: 12px;
+  color: var(--text2);
+}
+
+.case-create-context-bar {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 8px;
+  padding: 0 20px 20px;
+}
+
+.case-create-field input,
+.case-create-field select,
+.case-create-field textarea,
+.case-create-table input,
+.case-create-table select {
+  width: 100%;
+  min-height: 40px;
+  padding: 10px 12px;
+  border-radius: 12px;
+  border: 1px solid var(--line-strong);
+  background: #fff;
+  color: var(--text);
+  font: inherit;
+}
+
+.case-create-table-wrap {
+  display: grid;
+  gap: 12px;
+}
+
+.case-create-table {
+  width: 100%;
+  border-collapse: collapse;
+}
+
+.case-create-table th,
+.case-create-table td {
+  padding: 10px 8px;
+  border-bottom: 1px solid var(--line);
+  text-align: left;
+  vertical-align: top;
+  font-size: 13px;
+}
+
+.case-create-table th {
+  color: var(--text2);
+  font-weight: 600;
+}
+
+.case-create-table-actions,
+.case-create-footer {
+  display: flex;
+  justify-content: space-between;
+  gap: 10px;
+  padding: 18px 20px;
+  border-top: 1px solid var(--line);
+}
+
+.case-create-cards {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 16px;
+}
+
+.case-create-cards--three {
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+}
+
+.case-create-subgroups {
+  display: grid;
+  gap: 20px;
+}
+
+.case-create-subgroup {
+  display: grid;
+  gap: 12px;
+  padding-top: 4px;
+}
+
+.case-create-subgroup-title {
+  font-size: 13px;
+  font-weight: 700;
+  color: var(--text);
+  text-transform: uppercase;
+  letter-spacing: 0.04em;
+}
+
+.case-create-summary-grid {
+  display: grid;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  gap: 16px;
+  padding-top: 8px;
+}
+
+.case-fit-grid {
+  padding: 20px;
+}
+
+.case-review-list {
+  display: grid;
+  gap: 12px;
+  padding-top: 8px;
+}
+
+.case-review-item {
+  display: flex;
+  gap: 12px;
+  align-items: flex-start;
+  font-size: 13px;
+  color: var(--text2);
+}
+
+.case-option-card,
+.summary-card,
+.strategy-card {
+  border: 1px solid var(--line);
+  border-radius: 16px;
+  background: #fff;
+  padding: 16px;
+}
+
+.strategy-card {
+  text-align: left;
+  cursor: pointer;
+}
+
+.strategy-card.is-selected {
+  border-color: var(--primary);
+  box-shadow: inset 0 0 0 1px var(--primary);
+  background: var(--primary-soft);
+}
+
+.variant-card.is-selected {
+  border-color: var(--primary);
+  box-shadow: inset 0 0 0 1px var(--primary);
+  background: var(--primary-soft);
+}
+
+.strategy-card-title {
+  font-size: 14px;
+  font-weight: 700;
+  margin-bottom: 6px;
+}
+
+.strategy-card-text {
+  font-size: 13px;
+  line-height: 1.6;
+  color: var(--text2);
+}
+
+.soft-section {
+  background: var(--surface-soft);
+}
+
+.empty-state {
+  min-height: 140px;
+  display: grid;
+  place-items: center;
+  border: 1px dashed var(--line-strong);
+  border-radius: 16px;
+  color: var(--text2);
+  font-size: 14px;
+}
+
+.page-subtitle.compact {
+  margin: 8px 0 14px;
+  font-size: 13px;
+}
+
+@media (max-width: 1080px) {
+  .case-create-grid,
+  .case-create-grid--three,
+  .case-create-cards--three,
+  .case-create-summary-grid,
+  .case-create-cards,
+  .case-create-stepper {
+    grid-template-columns: 1fr;
+  }
+
+  .case-review-item {
+    flex-direction: column;
+  }
+}
