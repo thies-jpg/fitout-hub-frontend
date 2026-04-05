@@ -3,7 +3,7 @@ import { NavLink } from 'react-router-dom'
 const items = [
   { to: '/dashboard', label: '⌂' },
   { to: '/portfolio', label: '▣' },
-  { to: '/cases/new', label: '◎' },   // 👉 behalten
+  { to: '/cases', label: '◎' },   // 👉 behalten
   { to: '/tasks', label: '✓' },
   { to: '/help', label: '◌' },
 ]

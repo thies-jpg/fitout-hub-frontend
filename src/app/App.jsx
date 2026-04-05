@@ -1,6 +1,7 @@
 import { BrowserRouter, Navigate, Route, Routes } from 'react-router-dom'
 import AppLayout from '../layouts/AppLayout'
 import CaseCreatePage from '../pages/case/CaseCreatePage'
+import CasesPage from '../pages/case/CasesPage'
 import CaseOverviewPage from '../pages/case/CaseOverviewPage'
 import ComparePage from '../pages/case/ComparePage'
 import DashboardPage from '../pages/dashboard/DashboardPage'
@@ -28,6 +29,7 @@ export default function App() {
           <Route path="portfolio/new-space" element={<PlaceholderPage title="New Space" />} />
           <Route path="tasks" element={<PlaceholderPage title="Tasks" />} />
           <Route path="help" element={<PlaceholderPage title="Help" />} />
+          <Route path="cases" element={<CasesPage />} />
           <Route path="cases/new" element={<CaseCreatePage />} />
           <Route path="cases/:caseId/overview" element={<CaseOverviewPage />} />
           <Route path="cases/:caseId/compare" element={<ComparePage />} />
