@@ -6,6 +6,7 @@ const items = [
   { to: '/cases', label: '◎' },   // 👉 behalten
   { to: '/tasks', label: '✓' },
   { to: '/help', label: '◌' },
+  { to: '/dev', label: '⚙' },
 ]
 
 export default function Sidebar() {

@@ -7,6 +7,7 @@ import ComparePage from '../pages/case/ComparePage'
 import DashboardPage from '../pages/dashboard/DashboardPage'
 import PortfolioPage from '../pages/portfolio/PortfolioPage'
 import TestfitPage from '../pages/case/TestfitPage'
+import DevPage from '../pages/dev/DevPage';
 
 function PlaceholderPage({ title }) {
   return (
@@ -34,6 +35,7 @@ export default function App() {
           <Route path="cases/:caseId/overview" element={<CaseOverviewPage />} />
           <Route path="cases/:caseId/compare" element={<ComparePage />} />
           <Route path="cases/:caseId/testfit" element={<TestfitPage />} />
+          <Route path="/dev" element={<DevPage />} />
         </Route>
       </Routes>
     </BrowserRouter>
